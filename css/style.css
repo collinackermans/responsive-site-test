@@ -114,7 +114,7 @@ nav li{
     position: absolute;
     z-index: 9999;
     width: 4rem;
-    background: url('/assets/menu1.svg');
+    background: url('https://collinackermans.github.io/responsive-site-test//assets/menu1.svg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -132,7 +132,7 @@ nav ul.open{
 
 .mobile-nav-toggle.open{
 
-    background: url('/assets/kruisje.svg');
+    background: url('https://collinackermans.github.io/responsive-site-test//assets/kruisje.svg');
     transition: 1000ms ease all;
 }
 
