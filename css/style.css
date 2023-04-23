@@ -1,6 +1,11 @@
 
 
-
+/*     
+    
+    NAAM VOOR ALLES ASSETS ANDERS LAAD T NIET IN VIA GITHUB :((()))
+    
+    https://collinackermans.github.io/responsive-site-test/
+ */
 
 
 *{
@@ -10,11 +15,16 @@
 
 }
 
+a{
+    text-decoration: none;
+}
+
 body{
 
     margin: 0;
     padding: 0;
     overflow-x: hidden;
+    background: rgb(255, 251, 246);
 }
 
 .mobile-nav-toggle{
@@ -32,6 +42,7 @@ header{
     position: fixed;
     width: 100%;
     z-index: 99;
+    margin-top: -100px;
 
     
 }
@@ -138,3 +149,92 @@ nav ul.open{
 
 
 }
+
+
+
+main{
+    
+    margin-top: 100px;
+    padding-top: 50px;
+
+}
+
+section{
+
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+h1{
+
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+button{
+
+    border: none;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.hero-container{
+
+  margin: 0 auto;
+  padding: 1rem;
+  width: 80%;
+  text-align: center;
+  
+}
+
+#hero-section h1{
+
+    padding-bottom: 2rem;
+}
+
+#hero-section img{
+
+    padding-top: 5rem;
+    width: 20rem;
+    margin-bottom: 2rem;
+    margin-inline: 50%;
+    transform: translateX(-50%);
+
+}
+
+#hero-section button{
+
+    border-radius: 1rem;
+    width: 12rem;
+    height: 3rem;
+    margin-inline: 2rem;
+    margin-top: 1rem;
+    font-size: 1.1rem;
+    background-color: rgba(25, 0, 255);
+    color: white;
+    border: solid 1px black;
+    
+
+}
+
+#hero-section button:hover{
+
+    background-color: white;
+    color: rgba(25, 0, 255);
+    scale: 1.1;
+    font-weight: bold;
+}
+
+#hero-section a{
+
+    color: white;
+}
+
+#hero-section a:hover{
+
+    color:  rgba(25, 0, 255);
+}
+
+
