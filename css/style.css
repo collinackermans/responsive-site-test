@@ -42,7 +42,6 @@ header{
     position: fixed;
     width: 100%;
     z-index: 99;
-    margin-top: -100px;
 
     
 }
@@ -148,20 +147,32 @@ nav ul.open{
 }
 
 
+main {
+    padding-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+
 }
 
 
 
 main{
     
-    margin-top: 100px;
-    padding-top: 50px;
-    margin-left: 50%;
-    transform: translateX(-50%);
+
+
+        padding-top: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+      
 
 }
 
-section{
+#hero-section{
 
     max-width: 1200px;
     margin: 0 auto;
