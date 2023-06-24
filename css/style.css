@@ -156,6 +156,53 @@ header button{
 /* einde header */
 
 /* media query phone */
+
+@media screen and (max-width: 450px){
+
+    header *{
+        font-size: 10px!important;
+    }
+
+    *{
+        font-size: 0.9em;
+    }
+    h1{
+        font-size: 1.2em!important;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
+   h2{
+    font-size: 0.9em;
+   }
+    
+
+   #booking {
+
+    position: relative!important;
+}
+
+#booking #mobile-size{
+
+    display: block!important;
+    position: absolute!important;
+    left: 50%!important;
+    transform: translateX(-50%);
+    bottom: -15%!important;
+    font-size: 0.9em;
+
+    margin: 0px 0px 0px 0px!important;
+}
+
+#booking #norm-size{
+
+    display: none!important;
+
+}
+
+}
+
+
 @media screen and (max-width: 1000px){
     
 header button{
@@ -675,6 +722,12 @@ video{
     margin-bottom: 40px;
 }
 
+#booking {
+    
+    position: relative;
+}
+
+
 
 
 #message{
@@ -713,9 +766,29 @@ video{
     justify-content: space-between;
     align-content: center;
     align-items: center;
-    font-size: 1.2rem
+    font-size: 1.2rem;
+
     
 }
+
+
+#booking #mobile-size{
+
+    display: none;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    font-size: 0.9em;
+
+}
+
+#booking #norm-size{
+
+    display: block;
+
+}
+
+
 
 
 /* einde contact */
