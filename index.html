@@ -35,22 +35,22 @@
     </section>
 
     <section id="item-grid">
-        <div class="blok middel">
+        <div class="blok Dce">
             <h2>portfolio item 1</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus accusantium dolorum sunt quos nisi, consequatur earum obcaecati sapiente blanditiis eligendi perferendis, necessitatibus labore iusto eum totam dolor dicta sequi est.</p>
             <button class="blok-button">bekijk</button>
         </div>
-        <div class="blok smal">
+        <div class="blok Aegidius">
             <h2>portfolio item 2</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus accusantium dolorum sunt quos nisi, consequatur earum obcaecati sapiente blanditiis eligendi perferendis, necessitatibus labore iusto eum totam dolor dicta sequi est.</p>
             <button class="blok-button">bekijk</button>
         </div>
-        <div class="blok smal">
+        <div class="blok Codingcat">
             <h2>portfolio item 3</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus accusantium dolorum sunt quos nisi, consequatur earum obcaecati sapiente blanditiis eligendi perferendis, necessitatibus labore iusto eum totam dolor dicta sequi est.</p>
             <button class="blok-button">bekijk</button>
         </div>
-        <div class="blok groot">
+        <div class="blok MMS">
             <h2>portfolio item 4</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus accusantium dolorum sunt quos nisi, consequatur earum obcaecati sapiente blanditiis eligendi perferendis, necessitatibus labore iusto eum totam dolor dicta sequi est.</p>
             <button class="blok-button">bekijk</button>
@@ -60,29 +60,50 @@
 
     <section id="about-me">
         <div class="over-mij">
-        <h2>meer over mij</h2>
-        <p> Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Maecenas sed diam eget risus varius blandit sit amet non magna. Nullam quis risus eget urna mollis ornare vel eu leo.</p>
+            <h2>meer over mij</h2>
+            <p> Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Maecenas sed diam eget risus varius blandit sit amet non magna. Nullam quis risus eget urna mollis ornare vel eu leo.</p>
         </div>
         <div class="over-skills">
-        <h2>mijn skills</h2>
-        <p>Nullam id dolor id nibh ultricies vehicula ut id elit. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Curabitur blandit tempus porttitor</p>
+            <h2>mijn skills</h2>
+                <div id="tag-grid">
+                    <div class="tag groot avd">AVD</div>
+                    <div class="tag groot mmt">MMT</div>
+                    <div class="tag middel adobe">Adobe</div>
+                    <div class="tag klein uxd">UXD</div>
+                    <div class="tag klein gd">graphicDesign</div>
+                </div>
         </div>
-    </div>
     </section>
 
     <section id="avd-work">
         <h2>mijn avd werk</h2>
-        <video class="videoplayer" controls></video>
-        <div class="button-wrap">
-        <button class="vid1">video 1</button>
-        <button class="vid2">video 2</button>
-        <button class="vid3">video 3</button>
-        <button class="vid4">video 4</button>
-        </div>
+        <div class="video-container">
+            <button id="playBtn"><span>&#9658;</span></button>
+            <button id="pauseBtn"><span>&#x23F8;</span></button>
+            <button id="skipBtn"><span>&#x23F5;</span></button>
+        <video id="video1" >
+            <source id="lala" src="assets/vid1.mp4" type="video/mp4">
+        </video>
+        <video id="video2">
+            <source id="lala1" src="assets/vid2.mp4" type="video/mp4">
+        </video>
+        <video id="video3">
+            <source id="lala2" src="assets/vid3.mp4" type="video/mp4">
+        </video>
+        <video id="video4">
+            <source id="lala3" src="assets/vid4.mp4" type="video/mp4">
+        </video>
+  </div>
 
+            <div class="button-wrap">
+            <button class="vid1">video 1</button>
+            <button class="vid2">video 2</button>
+            <button class="vid3">video 3</button>
+            <button class="vid4">video 4</button>
+            </div>
         <div class="btn-vid-phone">
             <p>Next video</p>
-            <img src="#">
+            <button id="skipBtn1"><span>&#x23F5;</span></button>
         </div>
 
 
