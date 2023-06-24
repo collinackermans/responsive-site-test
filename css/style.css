@@ -16,9 +16,51 @@
     
 }
 
+.darkmode {
+
+    transition: all 2s;
+    background-color: var(--bg-btn);
+    color: var(--font-clr-btn);
+   
+}
+
+.darkmode button{
+
+    background-color: var(--bg-btn);
+    color: var(--font-clr-btn);
+    border: solid 1px var(--font-clr-btn);
+}
+
+
+.darkmode header, .darkmode footer  {
+
+    background-color: var(--bg-btn);
+    color: var(--font-clr-btn);
+
+}
+
+.darkmode .tag{
+    color: black;
+}
+
+
+#dark_light-toggle{
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+}
+
+
+
+
+
 
 body{
     background-color: var(--background);
+    transition: all 2s;
+    
 }
 
 
@@ -62,6 +104,7 @@ header{
 
     width: 100%;
     background-color: var(--color-header);
+    position: relative;
  
    
     
@@ -100,9 +143,9 @@ header button{
     width: 100px;
     border-radius: 50px;
     height: 50px;
-    margin-top: 5px;
     position: absolute;
-    top: 0;
+    top: 50%;
+    transform: translateY(-50%);
     right: 20px;
 
 
@@ -116,7 +159,17 @@ header button{
 @media screen and (max-width: 1000px){
     
 header button{
-    display: none;
+
+
+    width: 15%;
+    font-size: 0.8em;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+header{
+    position: relative;
 }
 
 nav a{
@@ -124,12 +177,19 @@ nav a{
 }
 
 /* begin hero mediaquery */
+
+
+#hero-section{
+    position: relative;
+    text-align: center;
+}
 .hero-img{
     position: absolute;
     left: 50%;
-    transform: translateX(-50%);
-    max-width: 100% !important;
-    height: 45%;
+    top: 50%;
+    height: 100%!important;
+    transform: translate(-50%,-50%);
+    border-radius: 50%!important;
     z-index: -1;
 }
 
@@ -615,12 +675,15 @@ video{
     margin-bottom: 40px;
 }
 
+
+
 #message{
 
     width: 60%;
     margin: 0 auto;
     height: 10em;
     border: solid 2px black;
+    font-size: 1.2rem
     
 }
 
@@ -628,6 +691,7 @@ video{
     width: 60%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin: 0 auto;
 }
 #email{
@@ -635,6 +699,7 @@ video{
     width: 100%;
     height: 3em;
     border: solid 2px black;
+    font-size: 1.2rem
     
 }
 
@@ -648,6 +713,7 @@ video{
     justify-content: space-between;
     align-content: center;
     align-items: center;
+    font-size: 1.2rem
     
 }
 

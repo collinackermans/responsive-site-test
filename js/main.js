@@ -202,5 +202,9 @@ $("#skipBtn1").click(function() {
     
 });
 
-
-
+$(document).ready(function(){
+    $('#dark_light-toggle').click(function(){
+        var element = document.body;
+        element.classList.toggle("darkmode"); 
+    });
+}); 
