@@ -1,253 +1,351 @@
+/* root */
 
 
-/*     
+:root{
+
+    --background: rgb(174, 174, 179);
+    --color-header: rgb(255, 136, 0);
+    --bg-blok: rgba(0,0,255);
     
-    NAAM VOOR ALLES ASSETS ANDERS LAAD T NIET IN VIA GITHUB :((()))
-    
-    https://collinackermans.github.io/responsive-site-test/
- */
-
-
-*{
-
-    box-sizing: border-box;
-    font-family: sans-serif;
-
 }
 
-a{
-    text-decoration: none;
-}
 
 body{
+    background-color: var(--background);
+}
+/* fonts */
 
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
-    background: rgb(255, 251, 246);
+h1{
+
+    font-size: 2em;
+    font-weight: bold;
+    text-transform: uppercase;
 }
 
-.mobile-nav-toggle{
+h2{
 
-    display: none;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-transform: uppercase ;
 }
 
 
+/* //header */
 header{
 
-    height: 100px;
-    background-color: rgba(25, 0, 255);
-    color: white;
-    text-align: center;
-    position: fixed;
+
     width: 100%;
-    z-index: 99;
-
-    
-}
-
-
-nav{
-
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 2rem;
-    font-size: 1.2rem;
-    max-width: 1200px;
-    margin: 0 auto;
-    
-}
-
-
-
-nav .logo{
-
-width: 100px;
-height: 100px;
-
-}
-
-
-nav ul{
-
-    list-style: none;
-    margin: 0;
-    padding: 0;
+    background-color: var(--color-header);
+ 
    
-}
-
-
-nav li{
-
-    display: inline-block;
-    padding: 1rem;
+    
 }
 
 
 nav a{
-    cursor: pointer;
-}
 
-nav a:hover{
-    cursor: pointer;
-    color: orange;
-    transition: 0.5s;
-}
+font-size: 2em;
+font-weight: bold;
 
-
-@media (max-width: 35rem){
-
-
-
-nav ul{
-
-    padding-top: 8rem;
-    position: fixed;
-    z-index: 1000;
-    inset: 0 0 0 60%;
-    background: rgba(25, 0, 255);
-    flex-direction: column;
-    transition: 1000ms ease all;
-    transform: translateX(100%);
 
 }
 
-nav li{
-
-    display: block;
-}
-
-.mobile-nav-toggle{
-
-    display: block;
-    position: absolute;
-    z-index: 9999;
-    width: 4rem;
-    background: url('https://collinackermans.github.io/responsive-site-test//assets/menu1.svg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-    border: 0;
-    aspect-ratio: 1;
-    top: 1rem;
-    right: 2rem;
-    transition: 1000ms ease all;
-
-}
-
-nav ul.open{
-    transform: translateX(0%);
-}
-
-.mobile-nav-toggle.open{
-
-    background: url('https://collinackermans.github.io/responsive-site-test//assets/kruisje.svg');
-    transition: 1000ms ease all;
-}
-
-
-main {
-    padding-top: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-
-}
-
-
-
-main{
-    
-
-
-        padding-top: 100px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-      
-
-}
-
-#hero-section{
-
-    max-width: 1200px;
+nav{
     margin: 0 auto;
-    padding: 1rem;
+    max-width: 1100px;
+    text-align: center;
+    padding: 20px;
+   
+    
+}
+
+ul{
+   
+}
+
+li{
+    display: inline;
+    margin-right: 20px;
+    
+}
+
+header button{
+
+    width: 100px;
+    border-radius: 50px;
+    height: 50px;
+    margin-top: 5px;
+    position: absolute;
+    top: 0;
+    right: 20px;
+
+
+    
+}
+
+
+/* einde header */
+
+/* media query phone */
+@media screen and (max-width: 1000px){
+    
+header button{
+    display: none;
+}
+
+nav a{
+    font-size: 1em;
+}
+
+.hero-img{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 100% !important;
+    height: 45%;
+    z-index: -1;
 }
 
 h1{
-
-    font-weight: bold;
-    font-size: 1.5rem;
+    font-size: 3em;
+    color: black;
 }
 
-button{
-
-    border: none;
-    text-decoration: none;
-    cursor: pointer;
-    transition: 0.2s;
+#about-me{
+    flex-wrap: wrap;
+ 
 }
 
-.hero-container{
+#about-me div{
 
-  margin: 0 auto;
-  padding: 1rem;
-  width: 80%;
-  text-align: center;
-  
-}
-
-#hero-section h1{
-
-    padding-bottom: 2rem;
-}
-
-#hero-section img{
-
-    padding-top: 5rem;
-    width: 20rem;
-    margin-bottom: 2rem;
-    margin-inline: 50%;
-    transform: translateX(-50%);
+    margin: 1em 0em;
 
 }
 
-#hero-section button{
+#avd-work button{
+    display: none;
+}
 
-    border-radius: 1rem;
-    width: 12rem;
-    height: 3rem;
-    margin-inline: 2rem;
-    margin-top: 1rem;
-    font-size: 1.1rem;
-    background-color: rgba(25, 0, 255);
-    color: white;
-    border: solid 1px black;
+
+
+#booking *{
+    margin-top: 10px !important ;
+    margin-bottom: 10px!important;
+}
+
+#booking h1{
+    font-size: 3em;
+}
+
+.email-container{
+
+    width: 100% !important;
+    flex-wrap: wrap;
+    margin-left: 50%;
+}
+
+.email-container button{
+
+
+    flex-wrap: wrap;
+    margin: 0 auto
+}
+
+#email{
+
+    width: 100% ;
+    height: 3em;
+    border: solid 2px black;
     
+}
+
+
+#message{
+
+    width: 100% !important;
+    height: 10em;
+    border: solid 2px black;
 
 }
 
-#hero-section button:hover{
+.date-time-container{
 
+    width: 100%;
     background-color: white;
-    color: rgba(25, 0, 255);
-    scale: 1.1;
-    font-weight: bold;
+    border: solid 2px black;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    
 }
 
-#hero-section a{
 
+}
+/* einde media query */
+
+/* begin main */
+
+main{
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+
+section{
+    margin: 100px 1em;
+}
+
+/* hero section */
+.hero-img{
+
+    max-width: 30%;
+    border-radius: 50%;
+}
+
+#hero-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5em;
+}
+
+/* einde hero section */
+/* item grid */
+
+.blok{
+
+    background-color: var(--bg-blok);
+}
+
+.blok p{
+    display: none;
+    
+}
+
+.blok:hover p{
+    display: block;
+}
+
+
+/* einde item grid */
+
+
+/* begin about me  */
+
+#about-me{
+    display: flex;
+    justify-content: space-between;
+    background-color: orange;
+ 
+}
+
+#about-me h2{
+    margin: 1em 0em;
+}
+
+/* einde about me  */
+
+/* begin videoplayer */
+
+video{
+    width: 100%;
+    margin: 0 auto;
+}
+
+.button-wrap{
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+#avd-work button{
+
+ 
+    height: 50px;
+    border-radius: 10px;
+    padding: 10px 80px;
+    text-align: center;
+}
+
+#avd-work h2{
+
+ 
+    margin: 1em 0em;
+}
+
+/* einde videoplayer */
+
+/* begin contact */
+
+#booking{
+    background-color: red;
+    text-align: center;
+    
+}
+
+#booking button{
+    background-color: black;
     color: white;
+    border-radius: 2em;
+    width: 150px;
+    padding: 1em 2em;
+    
+    
 }
 
-#hero-section a:hover{
 
-    color:  rgba(25, 0, 255);
+
+#booking *{
+    margin-top: 40px ;
+    margin-bottom: 40px;
+}
+
+#message{
+
+    width: 60%;
+    margin: 0 auto;
+    height: 10em;
+    border: solid 2px black;
+    
+}
+
+.email-container{
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+#email{
+
+    width: 100%;
+    height: 3em;
+    border: solid 2px black;
+    
 }
 
 
+.date-time-container{
+
+    width: 100%;
+    background-color: white;
+    border: solid 2px black;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    
+}
+
+
+/* einde main */
+
+/* footer */
+
+footer{
+    height: 50px;
+    background-color: var(--color-header);
+}
+/* einde footer */
